@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package base;
 
 import org.openqa.selenium.WebDriver;
@@ -30,4 +31,23 @@ public class BaseClass {
     public void closeBrowser() {
         driver.quit();
     }
+=======
+package base;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BaseClass {
+
+    public static WebDriver driver;
+
+    public void openBrowser() {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+    }
+
+    public void closeBrowser() {
+        driver.quit();
+    }
+>>>>>>> e4b4921050dfc5277d5fa1bb29368567ccfeb962
 }

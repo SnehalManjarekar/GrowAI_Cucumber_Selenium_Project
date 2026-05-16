@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pipeline {
     agent any
 
@@ -15,4 +16,23 @@ pipeline {
             }
         }
     }
+=======
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Build') {
+            steps {
+                sh 'mvn clean compile'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+    }
+>>>>>>> e4b4921050dfc5277d5fa1bb29368567ccfeb962
 }
